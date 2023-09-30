@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="/styleLogin.css">
+</head>
+<body>
+    <form action="/users/login" method="post">
+    <header class="header">
+        <h1>MOON</h1>
+    </header>
+     <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br> E entre para o nosso time</h1>
+            <img src="/img/img.svg" class="left-img" alt="">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <% if(messages.sucess_msg) {%>
+                  <li><%= messages.sucess_msg %></li>  
+                  <% } %>
+                
+                <ul>
+                   <% if(messages.erros) { %>
+                    <li><%= messages.error %></li>
+                   <% } %>     
+                   
+                </ul>
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="email" name="email" id="email" placeholder="Usuário" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
+                </div>
+                <button class="btn-login">Login</button>
+                <a href="/users/register">Register</a>
+            </div>
+        </div>
+     </div>
+    </form>
+</body>
+</html>

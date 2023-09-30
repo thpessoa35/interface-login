@@ -1,0 +1,147 @@
+body{ 
+   margin: 0;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body * {
+   box-sizing: border-box;
+}
+
+.header{
+   width: 100%;
+   height: 100px;
+   display: flex;
+   background: #2a8f54;
+   padding: 0%;
+   align-items: center;
+     justify-content: center;
+
+}
+.header > h1{
+    font-size:300%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin: 0;
+   border-radius: 15px;
+   background-color: #00ff88;
+}
+.main-login{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   background-color: rgb(0, 0, 0);
+   justify-content: center;
+   align-items: center;
+}
+
+.left-login{
+   width: 50vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+.left-login > h1{
+   color: rgb(53, 97, 67);
+
+}
+.left-img{
+   width: 35vw;
+}
+
+.right-login{
+   width: 50vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-login{
+   width: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 30px 35px;
+   background: #292535;
+   border-radius: 20px;
+   box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1{
+   color: #00ff88;
+   font-weight: 800;
+   margin: 0;
+}
+
+.textfield{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   margin: 10px 0px;
+}
+
+.textfield > input{
+   width: 100%;
+   border: none;
+   border-radius: 10px;
+   padding: 10px;
+   background: #130c25;
+   color: #f0ffffde;
+   font-size: 12px;
+   box-shadow: 0px 10px 40px #0d944a56;
+   outline: none;
+   box-sizing: border-box;
+}
+
+.textfield > label{
+   color: #f0ffffde;
+   margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+   color: #f0ffff94;
+
+}
+.btn-login{
+   width: 100%;
+   padding: 16px 0px;
+   margin: 25px;
+   border: none;
+   border-radius: 5px;
+   outline: none;
+   text-transform: uppercase;
+   font-weight: 100px;
+   letter-spacing: 4px;
+   color: #5404bd;
+   background: #00ff88;
+   cursor: pointer;
+   box-shadow: 0px 10px 40px -12px #00ff88;
+
+}
+
+@media only screen and (max-width: 950px){
+   .card-login{
+      width: 85%;
+   }
+}
+.errorInput{
+   border: 2px solid #ff0000 !important;
+}
+
+.card-login > li{
+   color: #00ff88;
+   font-weight: 800;
+   margin: 0;
+}
+.card-login > a{
+   color: #04bd42;
+   cursor: pointer;
+   box-shadow: 0px 10px 40px -12px #00ff88;
+
+}
